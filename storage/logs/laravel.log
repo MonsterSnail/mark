@@ -1,0 +1,15 @@
+[2019-07-10 12:50:02] local.ERROR: The "-p" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"-p\" option does not exist. at /home/wwwroot/mark/vendor/symfony/console/Input/ArgvInput.php:206)
+[stacktrace]
+#0 /home/wwwroot/mark/vendor/symfony/console/Input/ArgvInput.php(108): Symfony\\Component\\Console\\Input\\ArgvInput->addShortOption('p', NULL)
+#1 /home/wwwroot/mark/vendor/symfony/console/Input/ArgvInput.php(84): Symfony\\Component\\Console\\Input\\ArgvInput->parseShortOption('-p')
+#2 /home/wwwroot/mark/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 /home/wwwroot/mark/vendor/symfony/console/Command/Command.php(214): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#4 /home/wwwroot/mark/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#5 /home/wwwroot/mark/vendor/symfony/console/Application.php(969): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 /home/wwwroot/mark/vendor/symfony/console/Application.php(255): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\ServeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /home/wwwroot/mark/vendor/symfony/console/Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /home/wwwroot/mark/vendor/laravel/framework/src/Illuminate/Console/Application.php(88): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /home/wwwroot/mark/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(121): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /home/wwwroot/mark/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 {main}
+"} 
